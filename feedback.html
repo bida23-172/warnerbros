@@ -1,0 +1,90 @@
+<!Doctype>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>WARNER BROS</title>
+	<link rel="stylesheet" href="styles.css"/>
+	<link rel="stylesheet" href="font-awesomestyles/css/font-awesome.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+	<style>
+         h2 {
+            color: white;
+            filter: brightness(100%); 
+        }
+
+        label {
+            color: white;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            color: rgb(238, 22, 22);
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            filter: brightness(100%); 
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+            filter: brightness(100%); 
+        }
+    </style>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="images/logo.png"width="20%""20%"/>
+		</div>
+		<ul class="nav">
+			<li><a style="color:rgb(233, 233, 240);"  href="pages/movies.html">HOME</a></li>
+			<li><a style="color:rgb(233, 233, 240);"  href="pages/movies.html">MOVIES</a></li>
+			<li><a style="color:rgb(244, 244, 255);"  href="pages/collections.html">COLLECTIONS</a></li>
+			<li><a style="color:rgb(244, 244, 255);"  href="pages/games and apps.html">GAMES AND APPS</a></li>
+            <li><a style="color:rgb(244, 244, 255);"  href="feedback.html">FEEDBACK</a></li>
+		</ul>
+		<div class="search">
+			<i class="fa fa-search" aria-hidden="true"></i>
+			<input type="text" placeholder="Search...">
+		</div>
+    </header>
+	<section class="banner">
+        <div class="container">
+            <h2>FEEDBACK</h2>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Submit" class="btn">
+            </form>
+        </div>
+	</section>
+    <div class="social-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+	<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="./js/script.js"></script>
+	<script>
+		$(document).ready(function () {
+          $('.carousel').carousel();
+       });
+	</script>
+</body>
+</html>
