@@ -73,7 +73,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: url('venom.jpg') no-repeat;
+  background: url('images/venom.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   overflow: hidden;
